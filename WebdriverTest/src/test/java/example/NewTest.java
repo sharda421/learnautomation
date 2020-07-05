@@ -14,9 +14,10 @@ public class NewTest {
 	
 	WebDriver driver;
   
+	// These are parameters passed from the pom.xml
 	@Parameters({"browser","url"})
 	@Test
-	public void firstTest(String browser, String url) {
+	public void f(String browser, String url) {
 		System.out.println("Parameter passed is Chrome");
 	    driver.get(url);  
 		String title = driver.getTitle();				 
